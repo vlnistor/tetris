@@ -21,7 +21,7 @@ export class TetrisSolver {
     }
 
     public solve(line: string): number {
-        let max_row = 0;
+        let max_row = -1;
 
         line.split(',').forEach((instruction: string) => {
             const pattern: Pattern = instruction[0] as Pattern;
