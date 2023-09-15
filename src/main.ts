@@ -7,12 +7,11 @@ writeFileSync('./output.txt', '');
 const input = readFileSync('./input.txt', 'utf8').split('\n');
 
 
-// input.forEach((line, _) => {
-//     appendFileSync('./output.txt', `${solve(line)}\n`);
-// })
+input.forEach((line, _) => {
+    appendFileSync('./output.txt', `${solve(line)}\n`);
+})
 
 
-solve("Q0,Q2,Q4,Q6,Q8");
 
 
 
